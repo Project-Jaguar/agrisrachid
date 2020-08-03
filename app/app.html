@@ -1,0 +1,108 @@
+
+<ion-menu [content]="content">
+  <ion-header style="background-color: #fff !important;">
+    <ion-navbar style="background-color: #fff !important;">
+<img title="Project Jaguar Home" src="assets/bannerRect.png"  height="50px">
+    </ion-navbar>
+
+  </ion-header>
+  <ion-content>
+
+
+    
+        <ion-item (click)="pushHome()" no-lines >
+      <button  mini ion-fab item-left icon-only color="secondary">   <ion-icon name="home"></ion-icon></button>
+      <h3 item-left> Home</h3>
+      </ion-item>
+
+      <ion-item (click)="pushHome()" no-lines >
+        <button  mini ion-fab item-left icon-only color="secondary">   <ion-icon name="home"></ion-icon></button>
+        <h3 item-left> My Courses</h3>
+        </ion-item>
+
+        
+              <ion-item (click)="pushAssignments()" no-lines >
+      <button  mini ion-fab item-left icon-only color="primary">   <ion-icon name="send"></ion-icon></button>
+      <h3 item-left> Upgrade to Pro </h3>
+      </ion-item>
+
+
+     <ion-item (click)="push('SearchcoursePage')" no-lines >
+      <button  mini ion-fab item-left icon-only color="primary">   <ion-icon name="school"></ion-icon></button>
+      <h3 item-left> Search Courses </h3>
+      </ion-item>
+
+      <ion-item (click)="push('SearchcoursePage')" no-lines >
+        <button  mini ion-fab item-left icon-only color="primary">   <ion-icon name="school"></ion-icon></button>
+        <h3 item-left> Offline Mode</h3>
+        </ion-item>
+ 
+                    <ion-item (click)="push('About')" no-lines >
+      <button  mini ion-fab item-left icon-only color="primary">   <ion-icon name="information"></ion-icon></button>
+      <h3 item-left> About Us </h3>
+      </ion-item>
+     
+      <ion-item-divider>
+       Teachers Programs
+     </ion-item-divider>
+ 
+                    <ion-item (click)="push('CreateReferralPage')" no-lines >
+      <button  mini ion-fab item-left icon-only color="secondary">   <ion-icon name="logo-usd"></ion-icon></button>
+      <h3 item-left> Online Education Pedagogy </h3>
+      </ion-item> 
+                 
+                    <ion-item (click)="push('CourseCreationInfoPage')" no-lines >
+      <button  mini ion-fab item-left icon-only color="gold">   <ion-icon name="medal"></ion-icon></button>
+      <h3 item-left> Become an Teacher Teacher</h3>
+      </ion-item>
+
+      <ion-item (click)="push('CourseCreationInfoPage')" no-lines >
+        <button  mini ion-fab item-left icon-only color="gold">   <ion-icon name="medal"></ion-icon></button>
+        <h3 item-left> Flagship Teachers Programs </h3>
+        </ion-item>
+        <ion-item (click)="joinFocusGroup()" no-lines >
+          <button mini ion-fab item-left icon-only>  <ion-icon  name="chatboxes"></ion-icon>  </button>
+         <h3 item-left> Teachers Community</h3>
+         </ion-item>
+  
+       <ion-item-divider>
+       Extras
+     </ion-item-divider>
+       <ion-item (click)="downloadLink()" no-lines >
+        <button mini ion-fab item-left icon-only>  <ion-icon  name="download"></ion-icon>  </button>
+      <h3 item-left>    Download on device </h3>
+        
+      </ion-item>
+       <ion-item (click)="joinFocusGroup()" no-lines >
+       <button mini ion-fab item-left icon-only>  <ion-icon  name="logo-whatsapp"></ion-icon>  </button>
+      <h3 item-left>  Join our Community</h3>
+      </ion-item>
+      
+       
+<!-- <ion-item no-lines (click)="openMessages()">
+        <ion-icon item-left name="chatbubbles"></ion-icon>
+       <p item-left>  Your Messages (Coming Soon) </p>
+         <ion-badge item-right>0
+         </ion-badge>
+      </ion-item>-->
+ 
+ <ion-item-divider>
+       Documentation
+     </ion-item-divider>
+                          <ion-item (click)="push('Companypolicy')" no-lines >
+      <button  mini ion-fab item-left icon-only color="gold">   <ion-icon name="paper"></ion-icon></button>
+      <h3 item-left> Company Policy </h3>
+      </ion-item>
+
+                                <ion-item (click)="push('Privacypolicy')" no-lines >
+      <button  mini ion-fab item-left icon-only color="gold">   <ion-icon name="paper"></ion-icon></button>
+      <h3 item-left> Privacy Policy </h3>
+      </ion-item>   
+  </ion-content>
+  <!--<ion-footer text-centered>
+   
+    <button (click)="logOut()" block ion-button clear ><ion-icon name="log-out"></ion-icon> Log Out </button>
+  </ion-footer>-->
+</ion-menu>
+<ion-nav #content main [root]="rootPage"></ion-nav>
+   
